@@ -1,0 +1,471 @@
+/* ----------Import utilities.css stylesheet file----------- */
+@import "utilities.css";
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* **************************** Navbar******************************** */
+nav{
+    height: 7vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+}
+
+/* For Left side div  */
+
+.left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .logo img{
+    height: 3rem;
+    margin-right: 5px;
+}
+
+.left .logo h1{
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-dark);
+}
+
+
+/* ----For center div ---- */
+
+.center{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.center a{
+    text-decoration: none;
+    color: black;
+}
+
+.center a p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.center a p:hover{
+    color: var(--primary-dark);
+}
+
+/*--- For right side div------  */
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.right .fab{
+    font-size: 1.5rem;
+}
+
+.right .fab:hover{
+    color: black;
+}
+
+.right .fas{
+    font-size: 1.5rem;
+}
+
+.right .fas:hover{
+    color: black;
+}
+
+/* ********************** Header Section ****************************** */
+header{
+    height: 85vh;
+    width: 100vw;
+    /* background-color: rgba(163, 15, 15, 0.562); */
+    background:url("https://image.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 1rem;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header .image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    box-shadow: 0 0 5px black;
+    /* border: 1px solid white; */
+    margin-bottom: 4rem;
+}
+
+.image > h3{
+    color: var(--black);
+    opacity: 80%;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.image > h1{
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.image > p{
+    color: var(--black);
+    width: 50%;
+    text-align:center;
+    opacity: 80%;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.buttons{
+    /* background-color: red; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;  
+    margin-top: 1rem;
+}
+
+.buttons button{
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 11rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #070707;
+    cursor: pointer;
+}
+
+.buttons .hire-btn:hover{
+    background-color: transparent;
+}
+
+.hire-btn{
+    background-color: var(--orange);
+}
+
+.download-btn{
+    background-color: transparent;
+    color: var(--black);
+}
+
+.download-btn:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+/* ************************** Section About******************* */
+.about{
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.about .about-left{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.about .about-left img{
+    height: 100%;
+}
+
+/* right section  */
+
+.about .about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    /* background-color: red; */
+    height: 90%;
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+/* .about-heading{
+    color: var(--primary-dark);
+} */
+
+.heading{
+    color: var(--primary-dark);
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+}
+
+
+.about-name{
+    color: #960303;
+    letter-spacing: 2px;
+    opacity: 90%;
+}
+
+.about .about-right p{
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.read-more{
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 11rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000000;
+    cursor: pointer;
+    margin: auto;
+    background-color: transparent;
+}
+
+.read-more:hover{
+    background-color: var(--orange);
+    transition: 0.3s ease-in-out;
+}
+
+/* ***********************************Section Work ********************************** */
+.projects{
+    height:fit-content;
+    width: 90vw;
+    /* background-color: var(--light-grey); */
+    margin: auto;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 1rem;
+}
+
+.heading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    color: var(--primary-dark);
+    padding: 2rem 0px;
+}
+
+.card-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    gap: 2vw;
+}
+
+.card-wrapper .card img{
+    width: 95%;
+    box-shadow: 0 0 10px black;
+}
+
+
+/* ************************* Contact **************************** */
+.contact{
+    height: 70vh;
+    width: 90vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: auto;
+    background-color: rgba(85, 84, 83, 0.103);
+    margin-bottom: 2rem;
+    background-image: url("https://t3.ftcdn.net/jpg/01/98/05/16/360_F_198051606_qB9GmDGg79tCtoiHkuTtYAQlqpN6feyL.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* padding-bottom: 5rem; */
+    padding-top: 1rem;
+}
+
+.contact-heading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For Contact Form  */
+.form-container{
+    height: 85%;
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 1rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3vh;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+
+form input, textarea{
+    width: 80%;
+    font-size: 15px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 42, 42, 0.089);
+    border-radius: 5px;
+    box-shadow: 0 0 1px;
+    cursor: pointer;
+}
+
+form input:hover{
+    background-color: rgba(226, 248, 205, 0.39);
+}
+
+form textarea:hover{
+    background-color: rgba(226, 248, 205, 0.39);
+}
+
+.btn-submit{
+    background-color: rgba(0, 128, 0, 0.699);
+    color: var(--white);
+}
+
+
+
+/* *************************** Contact Details ************************ */
+.contact-details{
+    /* background-color: pink; */
+    width: 90vw;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details .cards{
+    height: 100%;
+    width:30%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.contact-details .cards img{
+    height: 40%;
+    border-radius: 100%;
+}
+
+.h-cards{
+    font-weight: 200;
+}
+
+.h-cards, .p-cards{
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************** Footer ********************************* */
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-top: 1px solid rgba(128, 128, 128, 0.589);
+}
+
+footer .footer-data{
+    letter-spacing: 2px;
+    color: var(--dark);
+}
+
+
+/* ************************ Media Queries **************************** */
+@media screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        min-width: 100vw;
+        /* max-width: 100vw; */
+    }
+
+    nav{
+        display: none;
+    }
+
+    /* About  */
+    .about{
+        min-width: 100vh;
+        max-width: 100vh;
+    }
+}

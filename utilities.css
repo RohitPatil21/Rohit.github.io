@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap');
+
+
+
+/* ---------------Root Colors--------------- */
+:root{
+    --primary: #0a6783;
+    --primary-dark: #023a4b;
+    --white: #ffffff;
+    --logo: #f7f7f7;
+    --blue: #4444e7;
+    --red: #ff0000;
+    --purple: #9e069e;
+    --green: #008000;
+    --orange: #ffa500;
+    --dark-orange: #a3340b;
+    --light-grey: #80808046;
+    --dark: #000000;
+}
+
+.pushster-font{
+    font-family: 'Pushster', cursive;
+}
+
+.fb{
+    color: var(--blue);
+}
+
+.email{
+    color: var(--red);
+}
+
+.insta{
+    color: var(--purple);
+}
+
+.whatsapp{
+    color: var(--green);
+}
